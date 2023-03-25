@@ -1,0 +1,16 @@
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+test/cmake_install.cmake
+test/Makefile
+test/CMakeFiles/
+test/CMakeLists.txt
+test/mod-lab03-coffee.test
+src/cmake_install.cmake
+src/libmod-lab03-coffee.so
+src/Makefile
+src/CMakeFiles/
+src/CMakeLists.txt
+src/mod-lab03-coffee.info
+run.sh
