@@ -31,8 +31,8 @@ void Automata::getMenu() {
     std::cout << i + 1 << ") " << menu[i] << " : " << prices[i] << "р\n";
   }
 }
-Automata::State Automata::getState() { 
-  return state; 
+Automata::State Automata::getState() {
+  return state;
 }
 void Automata::choice(int num) {
   if (state == ACCEPT) {
@@ -65,9 +65,9 @@ void Automata::cook(int num) {
     finish(cash - prices[num]);
   }
 }
-void Automata::finish(int rest) { 
+void Automata::finish(int rest) {
   std::cout << "Напиток готов\n";
   if (rest > 0) std::cout << "Сдача: " << rest << "\n";
   cash = 0;
-  state = WAIT; 
+  state = WAIT;
 }
