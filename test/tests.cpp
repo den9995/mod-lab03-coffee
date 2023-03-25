@@ -2,3 +2,10 @@
 
 #include <gtest/gtest.h>
 #include "Automata.h"
+
+TEST(actions, on) {
+    Automata a = Automata();
+    a.on();
+    EXPECT_EQ(a.getState(), Automata::WAIT);
+}
+
