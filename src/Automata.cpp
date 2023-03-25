@@ -55,7 +55,11 @@ void Automata::check(int num) {
   }
 }
 void Automata::cancel() {
-  if (state == ACCEPT || state == CHECK) state = WAIT;
+  if (state == ACCEPT || state == CHECK) {
+    state = WAIT;
+    std::cout << "Сдача: " << cash << "\n";
+    cash = 0;
+  }
 }
 void Automata::cook(int num) {
   if (state == CHECK) {
